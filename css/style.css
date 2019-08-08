@@ -1,0 +1,530 @@
+* {
+  box-sizing: border-box;
+  /* outline: 1px dotted red; */
+}
+body {
+  margin: 0px auto;
+  background-color: azure;
+  font-family: 'Source Sans Pro', Roboto,sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  background-image: url("../slike/aqua-1.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand';
+}
+hr {
+  border-top: 1px solid darkgrey;;
+  border-bottom: 0px;
+}
+.lista a, .lista a:visited {
+  text-decoration: none;
+  color: navy;
+  padding: 5px 10px;
+}
+.lista a:hover {
+  color: white;
+  background-color: navy;
+  padding: 5px 10px;
+}
+#container {
+  margin: 0px auto;
+  width: 1300px;
+  background-color: white;
+  border-left: 1px solid #181818;
+  border-right: 1px solid #181818;
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.3), -5px 0px 5px 0px rgba(0,0,0,0.3), 0px 5px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.3), -5px 0px 5px 0px rgba(0,0,0,0.3), 0px 5px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.3), -5px 0px 5px 0px rgba(0,0,0,0.3), 0px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+/* ============== */
+/* header stilovi */
+/* ============== */
+
+header {
+  position: relative;
+  width: 100%;
+  background-image: url("../slike/hdr-bgd.jpg");
+  -webkit-box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.5);
+  box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.5);
+}
+#hdr_up > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+#hdr_up {
+  height: 120px;
+}
+#levi_deo, #desni_deo {
+  width: 33.33%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+/* #pretraga {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 32px;
+  width: 100%;
+  padding: 10px 20px 10px 40px;
+  background-image: url("../slike/search.png");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: 8px 7px;
+  border: 1px solid royalblue;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+} */
+#logo {
+  width: 33.33%;
+  height: 100%;
+  padding: 10px;
+}
+#logo img {
+  display: block;
+  margin: auto;
+  height: 100px;
+}
+#social img {
+  width: 24px;
+}
+#social {
+  padding-right: 20px;
+}
+#social a {
+  float: right;
+  padding: 5px;
+}
+#menu {
+  text-align: center;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, navy 0%, royalblue 45%, royalblue 55%, navy 100%);
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+#menu a {
+  display: inline-block;
+  padding: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: aquamarine
+}
+#menu a:hover {
+  text-decoration: underline;
+}
+#menu a#active {
+  text-decoration: underline;
+  text-decoration-color: orange;
+  color: orange;
+}
+#linkovi a, #linkovi a:visited {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+}
+#linkovi a:hover {
+  color: lightblue;
+  background-color: darkblue;
+  padding: 5px 10px;
+}
+
+/* ============ */
+/* main stilovi */
+/* ============ */
+
+main {
+  /* position: relative; */
+  width: 100%;
+  min-height: auto;
+  padding: 30px;
+}
+main p {
+  text-align: justify;
+}
+main a, main a:hover {
+  color: navy;
+  text-decoration: none;
+}
+sup {
+  font-size: 12px;
+}
+.refer {
+  font-size: 14px;
+  line-height: 1.2em;
+}
+.divider {
+  width: 100%;
+  height: 40px;
+}
+.slika_levo {
+  margin-right: 10px;
+  background-color: gainsboro;
+  width: 320px;
+  height: 240px;
+  float: left;
+  border: 3px double grey;
+  position: relative;
+  z-index: 9;
+  transition: transform .5s;
+}
+.slika {
+  position: relative;
+  z-index: 9;
+}
+.slika_desno {
+  margin-left: 10px;
+  background-color: gainsboro;
+  width: 320px;
+  height: 240px;
+  float: right;
+  border: 3px double grey;
+  position: relative;
+  z-index: 9;
+  transition: transform .5s;
+}
+.slika_levo:hover, .slika_desno:hover {
+  transform: scale(1.1);
+  transform: rotate(360deg);
+}
+.bgddiv_desno {
+  position: absolute;
+  width: 320px;
+  height: 240px;
+  top: 3px;
+  right: -3px;
+  background-color: midnightblue;
+  z-index: 5;
+}
+.bgddiv_levo {
+  position: absolute;
+  width: 320px;
+  height: 240px;
+  top: 3px;
+  left: 3px;
+  background-color: midnightblue;
+  z-index: 5;
+}
+.bgdiv_desno, .bgdiv_levo {
+  transition: transform .5s;
+}
+.okvir {
+  width: 1100px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.item {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+  border: 1px solid lightgrey;
+}
+.item img {
+  width: 240px;
+  margin: 3px;
+  transition: transform .4s;
+  border: 3px double lightgrey;
+  padding: 1px;
+}
+.item img:hover {
+  transform: scale(1.1);
+}
+.item h5 {
+  margin: 0px auto 8px auto;
+}
+.imgbox {
+  position: relative;
+  display: inline-block;
+  width: 960px;
+  height: 540px;
+  border: 3px double grey;
+  padding: 1px;
+}
+.imgbox img {
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+}
+.imgbox h1 {
+  display: inline-block;
+  cursor: pointer;
+}
+#left {
+  position: relative;
+  left: -100px;
+}
+#right {
+  position: relative;
+  right: -100px;
+}
+/* ============== */
+/* footer stilovi */
+/* ============== */
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #0d0d3c;
+  color: gainsboro;
+  border-top: 1px solid #404040;
+}
+footer p {
+  text-align: center;
+  font-size: 12px;
+}
+footer h5 {
+  text-align: left;
+  padding-left: 20px;
+  line-height: 1em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+footer hr {
+  width: 90%;
+  border-top: 1px solid lightgrey;
+  border-bottom: 0px;
+}
+#copyright {
+  width: 100%;
+  display: inline-block;
+  background-color: black;
+  border-top: 1px solid #404040;
+}
+#copyright a {
+  text-decoration: none;
+  color: white;
+}
+#footerarea {
+  width: 100%;
+  min-height: 100px;
+  margin: auto;
+  position: relative;
+}
+#footer1, #footer2, #footer3 {
+  width: 33.33%;
+  min-height: 100px;
+  float: left;
+}
+#footer_menu, #linkovi {
+  list-style-type: none;
+}
+#footer_menu a, #footer_menu a:visited {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+#footer_menu a:hover {
+  color: lightblue;
+}
+#footer2 img {
+  width: 200px;
+  display: block;
+  margin: 32px auto;
+  border: 3px double grey;
+  transition: transform .4s;
+}
+#footer2 img:hover {
+  transform: scale(1.1);
+}
+#klizac {
+  display: block;
+  margin: 0 auto;
+}
+#back_to_top {
+  width: 50px;
+  height: 50px;
+  background-image: url("../slike/top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: none;
+  cursor: pointer;
+}
+#back_to_top:hover {
+  bottom: 22px;
+}
+
+/* ================= */
+/* sticky navigacija */
+/* ================= */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.sticky + .main {
+  padding-top: 60px;
+}
+
+/* ======== */
+/* lightbox */
+/* ======== */
+
+.lightbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10001;
+  text-align: center;
+  vertical-align: middle;
+}
+#boximg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1024px;
+  height: 768px;
+  transform: translate(-50%, -50%);
+  border: 3px double gainsboro;
+  padding: 3px;
+  animation: fade-in 1s ease-out;
+}
+#naslov {
+  position: absolute;
+  display: inline-block;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 50px;
+  border: 1px solid gainsboro;
+  color: navy;
+  animation: fade-in 1s ease-out;
+}
+#lbslika {
+  cursor: pointer;
+}
+/* =================== */
+/* animacija po skrolu */
+/* =================== */
+
+.hidden {
+  opacity: 0;
+}
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      /* transform: scale(.1,.1) */
+    }
+    to {
+      opacity: 1;
+    }
+}
+.fade-in-element {
+  animation: fade-in 1.4s ease-in;
+}
+
+/* ============== */
+/* responsive css */
+/* ============== */
+
+@media only screen and (max-width: 1310px) {
+  #container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1190px){
+  .okvir {
+    width: 900px;
+  }
+  .imgbox {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 980px){
+  .okvir {
+    width: 660px;
+  }
+
+}
+@media only screen and (max-width: 910px) {
+  #footerarea {
+    width: 100%;
+  }
+  #footer1, #footer2, #footer3 {
+    width: 100%;
+  }
+  #footer1, #footer3, #footer1 h5, #footer2 h5, #footer3 h5 {
+    text-align: center;
+    padding-left: 0px;
+  }
+  #footerarea ul {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 655px) {
+  #menu a {
+    font-size: 14px;
+    padding: 4px;
+  }
+  main {
+    padding: 10px;
+  }
+  main p{
+    font-size: 14px;
+  }
+  main h1 {
+    font-size: 24px;
+  }
+  main h2 {
+    font-size: 20px;
+  }
+  main li {
+    font-size: 14px;
+  }
+  .slika_desno, .slika_levo {
+    margin: 10px 0px;
+    background-color: gainsboro;
+    width: 100%;
+    height: auto;
+    border: 3px double grey;
+    position: relative;
+    z-index: 9;
+    transition: transform .5s;
+  }
+  .bgddiv_desno, .bgddiv_levo {
+    display: none;
+  }
+  #levi_deo, #desni_deo {
+    display: none;
+  }
+  #logo {
+    width: 100%;
+  }
+  .okvir {
+    width: 100%;
+  }
+  .item {
+    width: 90%;
+    padding: 3px;
+  }
+  .item h5, .item img {
+    width: 100%;
+  }
+  .item img {
+    margin: auto;
+  }
+  #left {
+    left: -20px;
+  }
+  #right {
+    right: -20px;
+  }
+}

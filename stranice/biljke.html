@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Akvaristika • Biljke</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <!-- HEADER -->
+      <header>
+        <div id="hdr_up">
+          <div id="levi_deo">
+
+          </div><!--
+          --><div id="logo">
+            <a href="index.html"><img src="../slike/logo.png" alt="Logo sajta"></a>
+          </div><!--
+          --><div id="desni_deo">
+            <div id="social">
+              <a href="https://www.facebook.com/groups/223345601023883/" target="_blank"><img id="fb" src="../slike/facebook-grey.png" alt="" onmouseover="changeIcon('fb', 'facebook')" onmouseout="changeIcon('fb', 'facebook-grey')"></a>
+              <a href="https://www.youtube.com/channel/UCM9oZkV3tGJuUUhgZaiGZkQ" target="_blank"><img id="yt" src="../slike/youtube-grey.png" alt="" onmouseover="changeIcon('yt', 'youtube')" onmouseout="changeIcon('yt', 'youtube-grey')"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="menu">
+        <a href="../index.html">Početna</a>
+        <a href="podela.html">Podela</a>
+        <a href="oprema.html">Oprema</a>
+        <a href="ribe.html">Ribe</a>
+        <a id="active" href="biljke.html">Biljke</a>
+        <a href="galerija.html">Galerija</a>
+      </div>
+      <!-- MAIN -->
+      <main>
+        <h1 class="hidden">Akvarijumske biljke</h1>
+        <hr class="hidden">
+        <div class="okvir">
+          <div class="item hidden">
+            <img id="lbslika" src="../slike/biljke/nana.jpg" alt="Anubias barteri var nana" onclick="imgLightBox(this)">
+            <h5>Anubias barteri var nana</h5>
+          </div>
+          <div class="item hidden">
+            <img id="lbslika" src="../slike/biljke/eleocharis.jpg" alt="Eleocharis parvula" onclick="imgLightBox(this)">
+            <h5>Eleocharis parvula</h5>
+          </div>
+          <div class="item hidden">
+            <img id="lbslika" src="../slike/biljke/riccia.jpg" alt="Riccia fluitans" onclick="imgLightBox(this)">
+            <h5>Riccia fluitans</h5>
+          </div>
+          <div class="item hidden">
+            <img id="lbslika" src="../slike/biljke/hemianthus.jpg" alt="Hemianthus callitrichoides" onclick="imgLightBox(this)">
+            <h5>Hemianthus callitrichoides</h5>
+          </div>
+          <div class="item hidden">
+            <img id="lbslika" src="../slike/biljke/bakopa.jpg" alt="Bacopa caroliniana" onclick="imgLightBox(this)">
+            <h5>Bacopa caroliniana</h5>
+          </div>
+          <div class="item hidden">
+            <img id="lbslika" src="../slike/biljke/ehinodorus.jpg" alt="Echinodorus quadricostatus" onclick="imgLightBox(this)">
+            <h5>Echinodorus quadricostatus</h5>
+          </div>
+          <div class="item hidden">
+            <img id="lbslika" src="../slike/biljke/alternatera.jpg" alt="Alternathera reineckii" onclick="imgLightBox(this)">
+            <h5>Alternathera reineckii</h5>
+          </div>
+          <div class="item hidden">
+            <img id="lbslika" src="../slike/biljke/lemna.jpg" alt="Lemna minor" onclick="imgLightBox(this)">
+            <h5>Lemna minor</h5>
+          </div>
+          <div class="item hidden">
+            <img id="lbslika" src="../slike/biljke/higrofila.jpg" alt="Hygrophila polysperma" onclick="imgLightBox(this)">
+            <h5>Hygrophila polysperma</h5>
+          </div>
+          <div class="item hidden">
+            <img id="lbslika" src="../slike/biljke/aponogeton.jpg" alt="Aponogeton boivinianus" onclick="imgLightBox(this)">
+            <h5>Aponogeton boivinianus</h5>
+          </div>
+        </div>
+      </main>
+      <!-- FOOTER -->
+      <footer>
+        <div id="footerarea">
+          <div id="footer1">
+            <h5>KORISNI LINKOVI</h5>
+            <hr>
+            <ul id="linkovi">
+              <li><a href="https://www.fishkeepingworld.com/" target="_blank">Fishkeeping World</a></li>
+              <li><a href="http://akvaristika.org/" target="_blank">Akvaristika.orginal</a></li>
+              <li><a href="https://javniakvarijum.rs/" target="_blank">Javni akvarijum Beograd</a></li>
+              <li><a href="http://oceankingdom-int.chimelong.com/Oceankingdom/EN/" target="_blank">Najveći javni akvarijum na svetu (Kina)</a></li>
+            </ul>
+          </div><!--
+          --><div id="footer2">
+            <h5>SLIKA IZ GALERIJE</h5>
+            <hr>
+            <img id="lbslika" class="random_img" src="" alt="Akvarijum" onclick="imgLightBox(this)">
+            <input type="range" name="klizac" value="" id="klizac" min="1" max="6" onchange="klizac(this)">
+          </div><!--
+          --><div id="footer3">
+            <h5>STRANICE</h5>
+            <hr>
+            <ul id="footer_menu">
+              <li><a href="../index.html">Početna</a></li>
+              <li><a href="podela.html">Podela</a></li>
+              <li><a href="oprema.html">Oprema</a></li>
+              <li><a href="ribe.html">Ribe</a></li>
+              <li><a href="biljke.html">Biljke</a></li>
+              <li><a href="galerija.html">Galerija</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="copyright">
+          <p>2019 &copy; <a href="../index.html">Akvaristika</a>. Dizajn: Ivica Stašuk. Sva prava zadržana. </p>
+        </div>
+      </footer>
+    </div>
+    <!-- lightbox div -->
+    <div class="lightbox" onclick="zatvoriLB()">
+      <img id="boximg" src="" alt="">
+      <h4 id="naslov">NASLOV</h4>
+    </div>
+    <!-- back to top -->
+    <div id="back_to_top" onclick="topFunction()" title="Povratak na vrh"></div>
+  <script src="../js/skripte.js"></script>
+  </body>
+</html>
